@@ -1,288 +1,387 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/violet"
-    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-
-    <TextView
-
-        android:id="@+id/Setting"
-        android:layout_width="wrap_content"
-        android:layout_height="53dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="200dp"
-        android:text="@string/settings"
-        android:textColor="@color/white"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        tools:ignore="RelativeOverlap" />
-
-    <TextView
-        android:id="@+id/Account"
-        android:layout_width="98dp"
-        android:layout_height="37dp"
-        android:layout_below="@+id/Setting"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="42dp"
-        android:text="@string/account"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/profile"
-        android:layout_width="92dp"
-        android:layout_height="70dp"
-        android:layout_below="@+id/Account"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/ic_btn_bg"
-        android:padding="10dp"
-        android:src="@drawable/ic_profile" />
-
     <LinearLayout
-        android:layout_width="200dp"
-        android:layout_height="70dp"
-        android:layout_alignStart="@+id/profile"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="117dp"
-        android:layout_marginTop="205dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        tools:ignore="UnknownId">
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/Setting"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/settings"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap" />
 
 
-        <TextView
-            android:id="@+id/profile_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="5dp"
-            android:text="@string/name"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            tools:ignore="SmallSp,UnknownId" />
-
-        <TextView
-            android:id="@+id/description"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="5dp"
-            android:text="@string/name"
-            android:textColor="@color/grey"
-            android:textSize="15sp"
-            tools:ignore="SmallSp,UnknownId" />
-
+        </RelativeLayout>
 
     </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/button2"
-        android:layout_width="55dp"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="214dp"
-        android:layout_marginEnd="18dp"
-        android:background="@drawable/ic_btn_bg"
-        android:src="@drawable/ic_baseline_keyboard_arrow_right"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:layout_marginTop="100dp">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="98dp"
-        android:layout_height="39dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="313dp"
-        android:layout_marginEnd="30dp"
-        android:text="@string/settings"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="398dp"
-        android:background="@drawable/ic_language"
-        android:padding="20dp"
-        android:src="@drawable/ic_baseline_language_24" />
+            <TextView
+                android:id="@+id/Account"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="42dp"
+                android:gravity="start"
+                android:paddingBottom="5dp"
+                android:text="@string/account"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="511dp"
-        android:background="@drawable/ic_notification"
-        android:padding="20dp"
-        android:src="@drawable/ic_baseline_notifications_24" />
+        </RelativeLayout>
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="627dp"
-        android:background="@drawable/ic_dnd"
-        android:padding="20dp"
-        android:src="@drawable/ic_baseline_bedtime_24" />
+    </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="745dp"
-        android:background="@drawable/ic_help"
-        android:padding="20dp"
-        android:src="@drawable/ic_baseline_help_24" />
 
-    <TextView
-        android:id="@+id/language"
-        android:layout_width="117dp"
-        android:layout_height="38dp"
-        android:layout_alignParentStart="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="153dp"
-        android:text="@string/language"
-        android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/notification"
-        android:layout_width="138dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="153dp"
-        android:layout_marginBottom="301dp"
-        android:text="@string/notification"
-        android:textSize="20sp" />
+    <LinearLayout
 
-    <TextView
-        android:id="@+id/darkMode"
-        android:layout_width="117dp"
-        android:layout_height="38dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="153dp"
-        android:layout_marginBottom="181dp"
-        android:text="@string/dark_mode"
-        android:textSize="20sp" />
+        android:id="@+id/l_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="180dp"
+        tools:ignore="InvalidId">
 
-    <TextView
-        android:id="@+id/help"
-        android:layout_width="117dp"
-        android:layout_height="38dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="153dp"
-        android:layout_marginBottom="63dp"
-        android:text="@string/help"
-        android:textSize="20sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/language_opted"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="416dp"
-        android:layout_marginEnd="87dp"
-        android:layout_toEndOf="@+id/language"
-        android:text="@string/option"
-        android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/on_off"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="98dp"
-        android:layout_marginBottom="196dp"
-        android:text="@string/preference"
-        android:textSize="18sp" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/profile"
+                android:layout_width="92dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_btn_bg"
+                android:padding="10dp"
+                android:src="@drawable/ic_profile" />
 
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/button3"
-        android:layout_width="55dp"
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/profile"
+                android:text="@string/name"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="SmallSp,UnknownId" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/profile"
+                android:layout_below="@+id/profile_name"
+                android:text="@string/name"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                tools:ignore="SmallSp,UnknownId" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/redirect"
+                android:layout_width="40dp"
+                android:layout_height="41dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/ic_btn_bg"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="407dp"
-        android:layout_marginEnd="18dp"
-        android:background="@drawable/ic_btn_bg"
-        android:src="@drawable/ic_baseline_keyboard_arrow_right" />
+        android:layout_marginTop="280dp">
 
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/button4"
-        android:layout_width="55dp"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="526dp"
-        android:layout_marginEnd="18dp"
-        android:background="@drawable/ic_btn_bg"
-        android:src="@drawable/ic_baseline_keyboard_arrow_right" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/button5"
-        android:layout_width="55dp"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="748dp"
-        android:layout_marginEnd="18dp"
-        android:background="@drawable/ic_btn_bg"
-        android:src="@drawable/ic_baseline_keyboard_arrow_right" />
+            <TextView
+                android:id="@+id/setting"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="42dp"
+                android:gravity="start"
+                android:paddingBottom="5dp"
+                android:text="@string/settings"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="192dp"
-        android:checked="true"
-        tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </RelativeLayout>
 
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/button6"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="55dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="335dp"
-        android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="350dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
-</RelativeLayout>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_language"
+                android:padding="20dp"
+                android:src="@drawable/ic_baseline_language_24" />
+
+            <TextView
+                android:id="@+id/lang_l"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/ic_lang"
+                android:text="@string/language"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/option"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toEndOf="@+id/lang_l"
+                android:gravity="start"
+                android:text="@string/option"
+                android:textColor="@color/dark_grey"
+                android:textSize="15sp"
+                tools:ignore="UnknownId" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/button"
+                android:layout_width="47dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:layout_toEndOf="@+id/option"
+                android:background="@drawable/ic_btn_bg"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right"
+                tools:ignore="DuplicateIds" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="430dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_notification"
+                android:padding="20dp"
+                android:src="@drawable/ic_baseline_notifications_24"/>
+
+            <TextView
+                android:id="@+id/notification"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/notify"
+                android:text="@string/notification"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/button3"
+                android:layout_width="61dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/ic_btn_bg"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="510dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/sleepIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_dnd"
+                android:padding="20dp"
+                android:src="@drawable/ic_baseline_bedtime_24" />
+
+            <TextView
+                android:id="@+id/darkMode"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/sleepIcon"
+                android:text="@string/dark_mode"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="2dp"
+                android:checked="true"
+                android:gravity="center_horizontal"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="590dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_help"
+                android:padding="20dp"
+                android:src="@drawable/ic_baseline_help_24"/>
+
+            <TextView
+                android:id="@+id/help_id"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/help"
+                android:text="@string/help"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/button_3"
+                android:layout_width="61dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/ic_btn_bg"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
