@@ -9,5 +9,104 @@
     tools:context=".SettingsActivity">
 
 
+    <TextView
+
+        android:id="@+id/Setting"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="200dp"
+        android:text="@string/account"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="249dp"
+        android:text="@string/photo"
+        android:textColor="@color/dark_grey"
+        android:textSize="24sp"
+        android:textStyle="normal"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="113dp"
+        android:layout_height="113dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="261dp"
+        android:background="@drawable/ic_btn_bg"
+        android:src="@drawable/ic_profile"
+        android:padding="20dp"/>
+
+    <TextView
+        android:id="@+id/uploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="393dp"
+        android:layout_marginEnd="140dp"
+        android:text="@string/upload_image"
+        android:textColor="@color/light_blue"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="97dp"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="355dp"
+        android:text="@string/userName"
+        android:textColor="@color/dark_grey"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="97dp"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="262dp"
+        android:text="@string/gender"
+        android:textColor="@color/dark_grey"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="169dp"
+        android:text="@string/age"
+        android:textColor="@color/dark_grey"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="97dp"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="79dp"
+        android:text="@string/email"
+        android:textColor="@color/dark_grey"
+        android:textSize="22sp" />
+
 
 </RelativeLayout>
