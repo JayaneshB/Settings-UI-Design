@@ -15,6 +15,8 @@
     <string name="gender">Gender</string>
     <string name="age">Age</string>
     <string name='email'>Email</string>
+    <string name='contact'>Contact</string>
     <string name="_age">28</string>
     <string name="mail_id">clerisseau@gmail.com</string>
+    <string name='phNo'>+91 9789620280</string>
 </resources>
