@@ -18,7 +18,8 @@
         <entry key="app/src/main/res/drawable/ic_notification.xml" value="0.11" />
         <entry key="app/src/main/res/drawable/ic_profile.xml" value="0.13" />
         <entry key="app/src/main/res/drawable/ic_submit_btn.xml" value="0.178" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.20101351351351351" />
+        <entry key="app/src/main/res/layout/activity_about.xml" value="0.2688665884512442" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2515857181033573" />
         <entry key="app/src/main/res/layout/activity_settings.xml" value="0.25" />
       </map>
     </option>

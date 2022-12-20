@@ -19,4 +19,18 @@
     <string name="_age">28</string>
     <string name="mail_id">clerisseau@gmail.com</string>
     <string name='phNo'>+91 9789620280</string>
+    <string name="about">About</string>
+    <string name="version">Android Version</string>
+    <string name="version_name">Android 11</string>
+    <string name="device">Device Name</string>
+    <string name="device_name">Redmi Note 8 Pro</string>
+    <string name="date">20-12-2022</string>
+    <string name="last_update">Last Security Update</string>
+    <string name="ui">MIUI Version</string>
+    <string name="ui_version">MIUI Global 12.5.10</string>
+    <string name="storage">Storage</string>
+    <string name="capacity">67.0 GB / 128 GB</string>
+    <string name="about_name">About</string>
+
+
 </resources>
