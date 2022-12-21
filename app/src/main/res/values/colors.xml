@@ -20,4 +20,9 @@
     <color name="blue_color">#5565fb</color>
     <color name="dark_grey">#a5a2c2</color>
     <color name="bottom_line_color">#373559</color>
+    <color name='baby_pink'>#fbeffb</color>
+    <color name='pink'>#d773d3</color>
+    <color name='text_color'>#bbbbbb</color>
+    <color name='skip_color'>#b9b5b8</color>
+    <color name='indicator_color'>#dd8edb</color>
 </resources>
